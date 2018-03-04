@@ -2,6 +2,7 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="lib" path="D:/Shtahet_docs/ITSteps/Java/Примеры/06. SundayAmazonBot/SundayAmazonBot/lib/byte-buddy-1.7.9.jar"/>
 	<classpathentry kind="lib" path="D:/Shtahet_docs/ITSteps/Java/Примеры/06. SundayAmazonBot/SundayAmazonBot/lib/client-combined-3.10.0.jar"/>
 	<classpathentry kind="lib" path="D:/Shtahet_docs/ITSteps/Java/Примеры/06. SundayAmazonBot/SundayAmazonBot/lib/client-combined-3.10.0-sources.jar"/>
@@ -15,5 +16,6 @@
 	<classpathentry kind="lib" path="D:/Shtahet_docs/ITSteps/Java/Примеры/06. SundayAmazonBot/SundayAmazonBot/lib/okhttp-3.9.1.jar"/>
 	<classpathentry kind="lib" path="D:/Shtahet_docs/ITSteps/Java/Примеры/06. SundayAmazonBot/SundayAmazonBot/lib/okio-1.13.0.jar"/>
 	<classpathentry kind="lib" path="D:/Shtahet_docs/ITSteps/Java/Примеры/06. SundayAmazonBot/SundayAmazonBot/lib/selenium-server-standalone-3.10.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
