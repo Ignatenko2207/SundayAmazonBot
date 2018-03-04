@@ -1,5 +1,7 @@
 package org.itstep.service;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -22,6 +24,8 @@ public class BotService {
 //		capabilities.setCapability(capabilityName, value);
 		
 		WebDriver driver = new FirefoxDriver(options);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 		
 		//Ожидание загрузки браузера
 		Timer.waitSec(5);
