@@ -39,7 +39,7 @@ public class BotService {
 
 	}
 	
-	public WebDriver registerAccount(WebDriver driver, Account account) {
+	public static WebDriver registerAccount(WebDriver driver, Account account) {
 		
 		//Переход по базовому адресу
 		driver.get(BASE_URL);
@@ -80,6 +80,12 @@ public class BotService {
 		
 		if(driver.getPageSource().contains("Hello, "))
 			return driver;
+		
+		driver.quit();
+		return null;
+	}
+	
+	public static WebDriver addGoodToCart(WebDriver driver, String asin) {
 		
 		return null;
 	}
