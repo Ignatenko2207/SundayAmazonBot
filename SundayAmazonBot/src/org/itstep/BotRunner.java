@@ -14,9 +14,13 @@ public class BotRunner {
 		
 		driver = BotService.registerAccount(driver, account);
 		
+		if(driver!=null) {
+			driver = BotService.addGoodToCart(driver, "asin");
+			
+			driver.quit();
+		}
 		
 		
-		driver.quit();
 	}
 
 }

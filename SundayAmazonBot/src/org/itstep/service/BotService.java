@@ -71,11 +71,20 @@ public class BotService {
 		String currentUrl = driver.getCurrentUrl();
 		driver.get(currentUrl);
 		
+		
 		if(driver.getPageSource().contains("Hello, ")) {
+			
 			return driver;
 		}
 		
+		driver.quit();
 		return null;
 	}
 	
+	
+	public static WebDriver addGoodToCart(WebDriver driver, String asin) {
+		
+		
+		return driver;
+	}
 }
