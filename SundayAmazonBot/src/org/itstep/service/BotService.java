@@ -2,6 +2,7 @@ package org.itstep.service;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -29,6 +30,7 @@ public class BotService {
 		
 		//Ожидание загрузки браузера
 		Timer.waitSec(5);
+		driver.manage().window().maximize();												//Максимизация окна
 		
 		return driver;
 		
