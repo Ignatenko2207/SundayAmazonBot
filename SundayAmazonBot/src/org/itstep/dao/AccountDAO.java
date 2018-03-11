@@ -10,7 +10,7 @@ import org.itstep.model.Account;
 
 public class AccountDAO {
 
-	public Account save(Account account) {
+	public static Account save(Account account) {
 		
 		Connection accConn = null;
 		PreparedStatement accStatement = null;
@@ -35,7 +35,7 @@ public class AccountDAO {
 		return null;
 	}
 
-	public Account get(String eMail) {
+	public static Account get(String eMail) {
 
 		Connection accConn = null;
 		PreparedStatement accStatement = null;
@@ -67,7 +67,7 @@ public class AccountDAO {
 		return null;
 	}
 	
-	public List<Account> getAll() {
+	public static List<Account> getAll() {
 
 		Connection accConn = null;
 		PreparedStatement accStatement = null;
@@ -102,13 +102,13 @@ public class AccountDAO {
 		return null;
 	}
 
-	public Account update(Account account) {
+	public static Account update(Account account) {
 
 		String sqlString = "UPDATE accounts SET password = ?, first_name = ?, second_name = ? WHERE email = ?";
 		return null;
 	}
 
-	public void delete(Account account) {
+	public static void delete(Account account) {
 		
 		String sqlString = "DELETE FROM accounts WHERE email = ?";
 	}
