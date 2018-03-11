@@ -8,9 +8,9 @@ import java.sql.SQLException;
 
 class ConnectionToDB {
 	
-	private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=AmazonBotDB;integratedSecurity=true";
-	private static final String USER_NAME = "";
-	private static final String USER_PASSWORD = "";
+	private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=AmazonBotDB;user=AmazonBot;password=AmazonBot-276712c184";
+//	private static final String USER_NAME = "AmazonBot";
+//	private static final String USER_PASSWORD = "AmazonBot-276712c184";
 	
 	protected static Connection getConnection() {
 		Connection conn = null;
@@ -37,7 +37,7 @@ class ConnectionToDB {
 		}
 	}
 	
-	static void closeconnection(ResultSet rSet, PreparedStatement statement, Connection conn) {
+	static void closeConnection(ResultSet rSet, PreparedStatement statement, Connection conn) {
 		try {
 			rSet.close();
 		} catch (SQLException e1) {
