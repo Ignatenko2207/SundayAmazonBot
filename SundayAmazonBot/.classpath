@@ -17,5 +17,6 @@
 	<classpathentry kind="lib" path="D:/Shtahet_docs/ITSteps/Java/Примеры/06. SundayAmazonBot/SundayAmazonBot/lib/okio-1.13.0.jar"/>
 	<classpathentry kind="lib" path="D:/Shtahet_docs/ITSteps/Java/Примеры/06. SundayAmazonBot/SundayAmazonBot/lib/selenium-server-standalone-3.10.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="D:/Shtahet_docs/ITSteps/Java/Примеры/06. SundayAmazonBot/SundayAmazonBot/lib/sqljdbc_6.2/enu/mssql-jdbc-6.2.2.jre8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
